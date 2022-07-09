@@ -121,6 +121,12 @@ button:focus {
     background-color: var(--clr-darkcyan);
 }
 
+.attribution {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: var(--gap);
+}
+
 /* ---------- MEDIA QUERIES ----------*/
 @media (max-width: 750px) {
     .hero {
@@ -134,12 +140,12 @@ button:focus {
     .price {
         text-decoration-line: line-through !important;
     }
-    .attribution {
+    /* .attribution {
         position: fixed;
         bottom: 0;
         margin-bottom: var(--gap);
         text-align: center;
-    }
+    } */
 }
 
 @media (min-width: 750px) {
@@ -168,16 +174,24 @@ button:focus {
         margin-right: var(--gap);
     }
     .product {
-        /* --gap-lg: 3em; */
-        margin-top: var(--gap-lg);
+        margin-top: var(--gap);
+    }
+    .pricing {
+        margin-top: 3em;
     }
     .price {
         text-decoration-line: line-through !important;
     }
     button {
-        margin-bottom: var(--gap-lg);
+        margin-bottom: var(--gap);
     }
     /* .attribution {
         margin-bottom: var(--gap);
     } */
+
+    @media (min-width: 1800px) {
+        .price {
+            text-decoration-line: line-through !important;
+        }
+    }
 }
