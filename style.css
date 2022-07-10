@@ -37,6 +37,7 @@ img {
 
 body {
     height: 100vh;
+    min-height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(0.875rem, 0.5669rem + 1.3146vw, 1.75rem);
     font-weight: 500;
@@ -178,6 +179,7 @@ button:focus {
     .hero {
         flex: 1 1 50%;
         width: 100vw;
+        height: 100vh;
         min-height: 100%;
         background: url("images/image-product-desktop.jpg");
         -webkit-background-size: cover;
@@ -194,6 +196,8 @@ button:focus {
         gap: var(--gap);
         flex: 1 1 50%;
         width: 95vw;
+        height: 100vh;
+        min-height: 100%;
         margin-inline: auto;
         margin-right: 2em;
     }
