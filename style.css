@@ -173,7 +173,7 @@ button:focus {
     .container {
         /* --gap: 2em; */
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         gap: var(--gap);
         flex: 1 1 50%;
         width: 95vw;
@@ -189,14 +189,11 @@ button:focus {
     button {
         margin: 0;
     }
-    /* .product {
-        margin-top: var(--gap);
-    } */
     .price {
         text-decoration-line: line-through !important;
     }
     button {
-        margin-bottom: var(--gap);
+        margin-bottom: var(--gap-lg);
     }
 
     @media (min-width: 1800px) {
