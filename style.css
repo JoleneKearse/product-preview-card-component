@@ -39,7 +39,7 @@ body {
     height: 100vh;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(0.875rem, 0.5669rem + 1.3146vw, 1.75rem);
+    font-size: clamp(0.875rem, 0.6731rem + 0.8615vw, 1.75rem);
     font-weight: 500;
     line-height: 1.7;
     letter-spacing: .15vw;
@@ -50,7 +50,7 @@ body {
 /* ---------- TYPOGRAPHY ----------*/
 .product-name,
 .sale-price {
-    font-size: clamp(2.2rem, 1.2141rem + 4.2066vw, 5rem);
+    font-size: clamp(3.5rem, 2.9231rem + 2.4615vw, 6rem);
     font-family: 'Fraunces', serif;
     font-weight: 700;
     line-height: 1;
@@ -62,7 +62,7 @@ body {
 
 .product, 
 button {
-    font-size: clamp(1.2rem, 1.0944rem + 0.4507vw, 1.5rem);
+    font-size: clamp(1.5rem, 1.2692rem + 0.9846vw, 2.5rem);
     font-weight: 500;
 }
 
@@ -88,6 +88,11 @@ button {
 }
 
 .price {
+    text-decoration-line: line-through !important;
+}
+
+.price:hover,
+.price:focus {
     text-decoration-line: line-through !important;
 }
 
