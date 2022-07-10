@@ -40,7 +40,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(0.875rem, 0.5669rem + 1.3146vw, 1.75rem);
     font-weight: 500;
-    line-height: 1.9;
+    line-height: 1.7;
     letter-spacing: .15vw;
     color: var(--clr-greyblue);
     background-color: var(--clr-cream);
@@ -68,6 +68,18 @@ button {
 .product {
     letter-spacing: 1.5vw;
     text-transform: uppercase;
+}
+
+.product,
+.description,
+.price {
+    transition: font-weight .25s;
+}
+
+.product:hover,
+.description:hover,
+.price:hover {
+    font-weight: 700;
 }
 
 .sale-price {
@@ -123,10 +135,15 @@ button:focus {
 }
 
 .attribution {
-    position: absolute;
+    position: relative;
     bottom: 0;
     /* margin-bottom: var(--gap); */
     z-index: -1;
+}
+
+.attribution:hover,
+.attribution:focus {
+    color: hsl(37, 40%, 22%);
 }
 
 /* ---------- MEDIA QUERIES ----------*/
@@ -195,10 +212,10 @@ button:focus {
     button {
         margin-bottom: var(--gap-lg);
     }
+}
 
-    @media (min-width: 1800px) {
-        .price {
-            text-decoration-line: line-through !important;
-        }
+@media (min-width: 1800px) {
+    .price {
+        text-decoration-line: line-through !important;
     }
 }
