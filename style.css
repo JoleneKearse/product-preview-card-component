@@ -107,7 +107,6 @@ i {
 
 .card {
     width: clamp(375px, 0.0000em + 100.0000vw, 1440px);
-    /* height: 90%; */
     margin-inline: auto;
     margin: var(--gap) auto;
     border-radius: 1.5em;
@@ -132,9 +131,8 @@ i {
     flex-direction: column;
     gap: var(--gap);
     width: clamp(375px, 0.0000em + 100.0000vw, 1440px);
-    /* width: clamp(187px, -0.6761rem + 50.0469vw, 720px); */
-    margin: 1.5em auto;
-    padding: 0 var(--gap);
+    margin: .5rem auto;
+    padding: 0 .5rem;
 }
 
 .pricing {
@@ -168,6 +166,31 @@ button:focus {
 }
 
 /* ---------- MEDIA QUERIES ----------*/
+/* mobile landscape view */
+@media (orientation:landscape) and
+(min-device-width: 320px) and (max-device-width: 900px) {
+    body {
+        background-color: red !important;
+        line-height: 1.1;
+    }
+    .card {
+        margin: 0;
+    }
+    .split {
+        height: 100vh;
+        gap: .5em;
+    }
+    .container {
+        display: block;
+    }
+    .product-name,
+    .sale-price {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 /* desktop view */
 @media (min-width: 750px) {
     .card {
