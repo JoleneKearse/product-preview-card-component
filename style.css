@@ -87,17 +87,12 @@ button {
     color: var(--clr-cyan);
 }
 
-.pricing .price {
-    text-decoration-line: line-through !important;
-}
-
-.price:hover,
-.price:focus {
-    text-decoration-line: line-through !important;
-}
-
 #strike-though {
-    text-decoration-line: line-through !important;
+    text-decoration-line: line-through;
+}
+
+.pricing .price {
+    text-decoration-line: line-through;
 }
 
 i {
@@ -111,12 +106,13 @@ i {
 /* ---------- LAYOUT ----------*/
 
 .card {
-    width: clamp(375px, 0.0000rem + 100.0000vw, 1440px);
+    width: clamp(375px, 0.0000em + 100.0000vw, 1440px);
     /* height: 90%; */
     margin-inline: auto;
     margin: var(--gap) auto;
     border-radius: 1.5em;
     background-color: var(--clr-white);
+    overflow: hidden;
 }
 
 .hero {
@@ -135,7 +131,7 @@ i {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
-    width: clamp(375px, 0.0000rem + 100.0000vw, 1440px);
+    width: clamp(375px, 0.0000em + 100.0000vw, 1440px);
     /* width: clamp(187px, -0.6761rem + 50.0469vw, 720px); */
     margin: 1.5em auto;
     padding: 0 var(--gap);
@@ -176,8 +172,8 @@ button:focus {
 @media (min-width: 750px) {
     .card {
         width: 1440px;
+        max-width: 100vw;
         height: 900px;
-        overflow: hidden;
     }
     .split {
         display: flex;
@@ -186,7 +182,7 @@ button:focus {
         height: 100%;
     }
     .hero {
-        flex: 1 1 50%;
+        flex: 1 2 50%;
         display: flex;
         justify-content: stretch;
         align-items: stretch;
@@ -203,7 +199,7 @@ button:focus {
         display: flex;
         justify-content: space-around;
         gap: var(--gap);
-        flex: 1 1 50%;
+        flex: 1 2 50%;
         height: 100%;
         margin-inline: auto;
     }
