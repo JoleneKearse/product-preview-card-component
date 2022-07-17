@@ -39,7 +39,7 @@ body {
     height: 100vh;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(0.875rem, 0.7606rem + 0.4272vw, 1.2rem);
+    font-size: clamp(0.875rem, 0.6549rem + 0.9390vw, 1.5rem);
     font-weight: 500;
     line-height: 1.7;
     letter-spacing: .15vw;
@@ -50,7 +50,7 @@ body {
 /* ---------- TYPOGRAPHY ----------*/
 .product-name,
 .sale-price {
-    font-size: clamp(2.75rem, 2.2218rem + 2.2535vw, 4.25rem);
+    font-size: clamp(2.75rem, 2.0458rem + 3.0047vw, 4.75rem);
     font-family: 'Fraunces', serif;
     font-weight: 700;
     line-height: 1;
@@ -190,39 +190,39 @@ button:focus {
 } */
 
 /* desktop view */
-/* @media (min-width: 750px) {
-    .card {
+@media (min-width: 750px) {
+    /* .card {
         width: 1440px;
-    }
+    } */
     .split {
         display: flex;
         gap: 2em;
+        width: 100%;
         height: 100%;
-        width: 100vw;
     }
     .hero {
         flex: 1 1 50%;
-        width: 100vw;
-        height: 110vh;
-        min-height: 100%;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        width: 100%;
+        height: 900px;
         background: url("images/image-product-desktop.jpg");
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center auto;
+        /* background-position: center center; */
     }
     .container {
         display: flex;
         justify-content: space-around;
         gap: var(--gap);
         flex: 1 1 50%;
-        width: 95vw;
-        height: 100vh;
-        min-height: 100%;
+        height: 100%;
         margin-inline: auto;
-        margin-right: 2em;
+        /* margin-right: 2em; */
     }
     .product-name,
     .product,
@@ -240,9 +240,3 @@ button:focus {
         margin-bottom: var(--gap-lg);
     }
 }
-
-@media (min-width: 1800px) {
-    .price {
-        text-decoration-line: line-through !important;
-    }
-} */
