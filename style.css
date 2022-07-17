@@ -44,7 +44,7 @@ body {
     line-height: 1.7;
     letter-spacing: .15vw;
     color: var(--clr-greyblue);
-    background-color: var(--clr-cream);
+    background-color: #EBFEF5;
 }
 
 /* ---------- TYPOGRAPHY ----------*/
@@ -106,6 +106,12 @@ i {
 
 /* ---------- LAYOUT ----------*/
 
+.card {
+    width: 375px;
+    margin-inline: auto;
+    background-color: var(--clr-cream);
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -140,22 +146,22 @@ button:focus {
     background-color: var(--clr-darkcyan);
 }
 
-/* .attribution {
-    position: relative;
-    bottom: 2;
+.attribution {
+    position: absolute;
+    bottom: 1;
     z-index: -1;
 }
 
 .attribution:hover,
 .attribution:focus {
     color: hsl(37, 40%, 22%);
-} */
+}
 
 /* ---------- MEDIA QUERIES ----------*/
 /* mobile view */
 @media (max-width: 750px) {
     .hero {
-        width: 100vw;
+        width: 100%;
         height: 35vh;
         background: url("images/image-product-desktop.jpg");
         -webkit-background-size: cover;
@@ -170,6 +176,9 @@ button:focus {
 
 /* desktop view */
 @media (min-width: 750px) {
+    .card {
+        width: 1440px;
+    }
     .split {
         display: flex;
         gap: 2em;
