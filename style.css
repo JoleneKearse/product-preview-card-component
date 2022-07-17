@@ -39,18 +39,18 @@ body {
     height: 100vh;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(0.875rem, 0.6731rem + 0.8615vw, 1.75rem);
+    font-size: clamp(0.875rem, 0.7606rem + 0.4272vw, 1.2rem);
     font-weight: 500;
     line-height: 1.7;
     letter-spacing: .15vw;
     color: var(--clr-greyblue);
-    background-color: #EBFEF5;
+    background-color: var(--clr-cream);
 }
 
 /* ---------- TYPOGRAPHY ----------*/
 .product-name,
 .sale-price {
-    font-size: clamp(3.5rem, 2.9231rem + 2.4615vw, 6rem);
+    font-size: clamp(2.75rem, 2.2218rem + 2.2535vw, 4.25rem);
     font-family: 'Fraunces', serif;
     font-weight: 700;
     line-height: 1;
@@ -62,7 +62,7 @@ body {
 
 .product, 
 button {
-    font-size: clamp(1.5rem, 1.2692rem + 0.9846vw, 2.5rem);
+    font-size: clamp(1.25rem, 0.8979rem + 1.5023vw, 2.25rem);
     font-weight: 500;
 }
 
@@ -100,25 +100,40 @@ i {
     margin-right: .75em;
 }
 
-/* .attribution {
+.attribution {
     text-align: center;
-} */
+}
 
 /* ---------- LAYOUT ----------*/
 
 .card {
-    width: 375px;
+    width: clamp(375px, 0.0000rem + 100.0000vw, 1440px);
     margin-inline: auto;
-    background-color: var(--clr-cream);
+    margin: var(--gap) auto;
+    border-radius: 1.5em;
+    background-color: var(--clr-white);
+}
+
+.hero {
+    width: 100%;
+    height: 35vh;
+    background: url("images/image-product-desktop.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: top center; */
 }
 
 .container {
+    --gap: 1.5em;
     display: flex;
     flex-direction: column;
     gap: var(--gap);
-    width: 90vw;
-    margin-inline: auto;
-    margin-top: 1.5em;
+    width: clamp(375px, 0.0000rem + 100.0000vw, 1440px);
+    /* width: clamp(187px, -0.6761rem + 50.0469vw, 720px); */
+    margin: 1.5em auto;
+    padding: 0 var(--gap);
 }
 
 .pricing {
@@ -132,7 +147,7 @@ i {
 /* ---------- COMPONENTS ----------*/
 
 button {
-    margin-top: var(--gap);
+    margin: .5em 0 var(--gap) 0;
     padding: 1em 2em;
     border-radius: .75em;
     background-color: var(--clr-cyan);
@@ -159,7 +174,7 @@ button:focus {
 
 /* ---------- MEDIA QUERIES ----------*/
 /* mobile view */
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .hero {
         width: 100%;
         height: 35vh;
@@ -172,10 +187,10 @@ button:focus {
     .price {
         text-decoration-line: line-through !important;
     }
-}
+} */
 
 /* desktop view */
-@media (min-width: 750px) {
+/* @media (min-width: 750px) {
     .card {
         width: 1440px;
     }
@@ -230,4 +245,4 @@ button:focus {
     .price {
         text-decoration-line: line-through !important;
     }
-}
+} */
