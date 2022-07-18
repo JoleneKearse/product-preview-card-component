@@ -170,7 +170,6 @@ button:focus {
 @media (orientation:landscape) and (max-device-height: 475px) and
 (min-device-width: 320px) and (max-device-width: 900px) {
     body {
-        background-color: red !important;
         line-height: 1.1;
         overflow: hidden;
     }
@@ -194,10 +193,10 @@ button:focus {
         height: 100vh;
     }
     .product-name {
-        margin: 1em 0;
+        margin: .5em 0 !important;
     }
     .pricing {
-        margin-top: .75rem;
+        margin-top: 1.5rem !important;
     }
     .product-name,
     .sale-price {
@@ -212,7 +211,7 @@ button:focus {
         text-decoration-line: line-through !important;
     }
     button {
-        margin-top: .75em;
+        margin-top: .75em !important;
     }
 }
 
