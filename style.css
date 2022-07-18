@@ -167,7 +167,7 @@ button:focus {
 
 /* ---------- MEDIA QUERIES ----------*/
 /* mobile landscape view */
-@media (orientation:landscape) and
+@media (orientation:landscape) and (max-device-height: 475px) and
 (min-device-width: 320px) and (max-device-width: 900px) {
     body {
         background-color: red !important;
@@ -176,12 +176,17 @@ button:focus {
     .card {
         margin: 0;
     }
-    .split {
-        height: 100vh;
-        gap: .5em;
+    .hero {
+        background-position: bottom;
     }
     .container {
-        display: block;
+        display: block !important;
+    }
+    .product-name {
+        padding: .4em 0;
+    }
+    .pricing {
+        margin-top: .4rem;
     }
     .product-name,
     .sale-price {
